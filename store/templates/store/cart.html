@@ -1,0 +1,53 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="box-element">
+                <a href="{% url 'store' %}" class="btn btn-outline-dark">&#2190; Continue Shopping</a>
+
+                <table class="table">
+                    <tr>
+                        <th><h5>Items: <strong>3</strong></h5></th>
+                        <th><h5>Total: <strong>$32</strong></h5></th>
+                        <th>
+                            <a href="{% url 'checkout' %}" style="float: right; margin: 5px" class="btn btn-success"
+                            >Checkout</a>
+                        </th>
+
+                    </tr>
+                </table>
+
+            </div>
+
+            <br>
+
+            <div class="box-element">
+                <div class="cert-row">
+                    <div style="flex: 2"></div>
+                    <div style="flex: 2">Item</div>
+                    <div style="flex: 1">Price</div>
+                    <div style="flex: 1">Quantity</div>
+                    <div style="flex: 1"><strong>Total</strong></div>
+                </div>
+
+                <div class="cert-row">
+                    <div style="flex: 2"><img src="{% static 'images/placeholder.png' %}" class="row-image" alt=""></div>
+                    <div style="flex: 2">Product 1</div>
+                    <div style="flex: 1">$12</div>
+                    <div style="flex: 1">
+                        <p class="quantity">2</p>
+                        <div class="quantity">
+                            <img src="{% static 'images/arrow-up.png' %}" alt="" class="chg-quantity">
+                            <img src="{% static 'images/arrow-down.png' %}" alt="" class="chg-quantity">
+                        </div>
+                    </div>
+                    <div style="flex: 1"><strong>$42</strong></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

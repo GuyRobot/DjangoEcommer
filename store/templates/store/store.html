@@ -1,0 +1,31 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="thumbnail" src="{% static 'images/placeholder.png' %}" alt="">
+            <div class="box-element product">
+                <h6><strong>Product</strong></h6>
+                <hr>
+                <button class="btn btn-outline-secondary add-btn">Add to cart</button>
+                <a href="#" class="btn-outline-success">View</a>
+                <h4 style="display: inline-block">$24</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="box-element product"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="box-element product"></div>
+        </div>
+    </div>
+
+{% endblock %}
